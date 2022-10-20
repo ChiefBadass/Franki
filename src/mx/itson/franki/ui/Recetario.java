@@ -157,7 +157,7 @@ public class Recetario extends javax.swing.JFrame {
                 String contenido = new String(archivoBytes,StandardCharsets.UTF_8);
 
                 Receta receta = new Receta().deserializar(contenido);
-                lblUsuario.setText("Suido por: "+receta.getUsuario().getNombre() + " (" + receta.getUsuario().getEmail() + ")");
+                lblUsuario.setText("Subido por: "+receta.getUsuario().getNombre() + " (" + receta.getUsuario().getEmail() + ")");
                 lblTitulo.setText(receta.getNombre());
                 lblDescripcion.setText(receta.getDescripcion());
                 lblPorciones.setText("Porciones: "+receta.getPorciones());
